@@ -31,3 +31,4 @@ Route::resource('/suppliers','SupplierController');
 Route::resource('/users','UserController');
 Route::resource('/companies','CompanyController');
 Route::resource('/transactions','TransactionController');
+

@@ -14,7 +14,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::paginate(5);
+        return view('products.index', ['products' => $products]);
     }
 
     /**
@@ -35,7 +36,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Product::create($request->all());
+        return redirect()->back()->with('success', ' Product Created Successfully! ');
     }
 
     /**
@@ -67,9 +69,14 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $id)
     {
-        //
+        $products = Product::find($id);
+        if(!$products){
+            return back()->with('Error', 'Product Does not exist');
+        }
+        $products->update($request->all());
+        return back()->with('Success', 'Product Updated successfully!');
     }
 
     /**
@@ -78,8 +85,13 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {
-        //
+        $products = Product::find($id);
+        if(!$products){
+            return back()->with('Error', 'Product Does not exist');
+        }
+        $products->delete();
+        return back()->with('Success', 'Product Deleted Successfully');
     }
 }
