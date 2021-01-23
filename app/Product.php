@@ -8,4 +8,10 @@ class Product extends Model
 {
     protected $table = 'products';
     protected $fillable = ['product_name', 'price', 'alert_stock', 'quantity', 'brand', 'description'];
+
+    public function orderdetail()
+    {
+        return $this->hasMany('App\Order_Detail' );
+    }
+
 }
