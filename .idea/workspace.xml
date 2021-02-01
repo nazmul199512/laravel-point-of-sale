@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee10e94-af60-499a-9afb-8c227f2f4995" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_pos_management_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_pos_management_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Order_Detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order_Detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_14_145607_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_145607_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_14_145850_create_order__details_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_14_145850_create_order__details_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,6 +150,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
     </include_path>
   </component>
   <component name="ProjectId" id="1n3yarcuYR74f9fhLDAjMAQ0Ua4" />
@@ -195,7 +193,12 @@
       <workItem from="1611215174405" duration="9432000" />
       <workItem from="1611241865047" duration="6947000" />
       <workItem from="1611329574235" duration="10427000" />
-      <workItem from="1611381853072" duration="18444000" />
+      <workItem from="1611381853072" duration="19156000" />
+      <workItem from="1611505075694" duration="625000" />
+      <workItem from="1611938376703" duration="634000" />
+      <workItem from="1612007380898" duration="12435000" />
+      <workItem from="1612071648563" duration="3608000" />
+      <workItem from="1612186683893" duration="10424000" />
     </task>
     <servers />
   </component>
@@ -223,9 +226,13 @@
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2140" y="442" key="NewPhpFileDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1611345830857" />
-    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611222760025">
+    <state x="1458" y="92" width="1736" height="856" key="dock-window-1" timestamp="1612030040290">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1611222760025" />
+    <state x="1458" y="92" width="1736" height="856" key="dock-window-1/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1612030040290" />
+    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1612199810703">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1989" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1612199810703" />
   </component>
 </project>
