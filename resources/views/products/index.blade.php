@@ -8,10 +8,10 @@
                 <div class="col-md-9">
                     <div class="card">
                         <div class="card-header"><h4 style="float: left">Add Products</h4> <a style="float: right"
-                                                                                          class="btn btn-dark"
-                                                                                          data-toggle="modal"
-                                                                                          data-target="#addproduct"
-                                                                                          href="#">
+                                                                                              class="btn btn-dark"
+                                                                                              data-toggle="modal"
+                                                                                              data-target="#addproduct"
+                                                                                              href="#">
                                 <i class="fa fa-plus"> </i> Add New Products</a></div>
                         <div class="card-body">
                             <table class="table table-bordered table-left">
@@ -37,10 +37,12 @@
                                         <td>{{ $product->brand }}</td>
                                         <td>{{ $product->price}}</td>
                                         <td>{{ $product->quantity }}</td>
-                                        <td>@if($product->alert_stock > $product->quantity)<span class="badge badge-danger">Low Stock
+                                        <td>@if($product->alert_stock > $product->quantity)<span
+                                                class="badge badge-danger">Low Stock
                                                {{$product->alert_stock}}
-                                                @else <span class="badge badge-success">{{$product->alert_stock }}</span>
-                                                    @endif
+                                                @else <span
+                                                    class="badge badge-success">{{$product->alert_stock }}</span>
+                                                @endif
                                             </span>
                                         </td>
                                         <td>@if($product->is_admin == 1) Admin
@@ -62,12 +64,15 @@
 
                                     </tr>
 
-                                    <div class="modal right fade" id="editUser{{$product->id}}" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal right fade" id="editUser{{$product->id}}" data-backdrop="static"
+                                         data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                         aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title" id="staticBackdropLabel">EDIT PRODUCT</h4>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
 
@@ -76,43 +81,53 @@
                                                 {{-- MOdal for product details Edit --}}
 
                                                 <div class="modal-body">
-                                                    <form action="{{route('products.update', $product->id)}}" method="post">
+                                                    <form action="{{route('products.update', $product->id)}}"
+                                                          method="post">
                                                         @csrf
                                                         @method('put')
                                                         <div class="form-group">
                                                             <label for="">Product Name</label>
-                                                            <input type="text" name="product_name" id="" value="{{$product->product_name}}" class="form-control">
+                                                            <input type="text" name="product_name" id=""
+                                                                   value="{{$product->product_name}}"
+                                                                   class="form-control">
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="">Description</label>
-                                                            <input type="text" name="description" id="" value="{{$product->description}}" class="form-control">
+                                                            <input type="text" name="description" id=""
+                                                                   value="{{$product->description}}"
+                                                                   class="form-control">
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="">Brand</label>
-                                                            <input type="text" name="brand" id="" value="{{$product->brand}}" class="form-control">
+                                                            <input type="text" name="brand" id=""
+                                                                   value="{{$product->brand}}" class="form-control">
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="">Price</label>
-                                                            <input type="number" name="price" id="" value="{{$product->price}}" class="form-control">
+                                                            <input type="number" name="price" id=""
+                                                                   value="{{$product->price}}" class="form-control">
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="">Quantity</label>
-                                                            <input type="number" name="quantity" id="" value="{{$product->quantity}}" class="form-control">
+                                                            <input type="number" name="quantity" id=""
+                                                                   value="{{$product->quantity}}" class="form-control">
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label for="">Alert Stock</label>
-                                                            <input type="number" name="alert_stock" id="" value="{{$product->alert_stock}}" class="form-control">
+                                                            <input type="number" name="alert_stock" id=""
+                                                                   value="{{$product->alert_stock}}"
+                                                                   class="form-control">
                                                         </div>
 
 
-
                                                         <div class="modal-footer">
-                                                            <button class="btn btn-warning btn-block">Update Product </button>
+                                                            <button class="btn btn-warning btn-block">Update Product
+                                                            </button>
                                                         </div>
 
 
@@ -129,12 +144,15 @@
                                     {{-- Modal of Delete Product--}}
 
 
-                                    <div class="modal right fade" id="deleteProduct{{$product->id}}" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal right fade" id="deleteProduct{{$product->id}}"
+                                         data-backdrop="static" data-keyboard="false" tabindex="-1"
+                                         aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h4 class="modal-title" id="staticBackdropLabel">DELETE Product</h4>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
                                                         <span aria-hidden="true"></span>
                                                     </button>
 
@@ -142,13 +160,16 @@
                                                 </div>
 
                                                 <div class="modal-body">
-                                                    <form action="{{route('products.destroy', $product->id)}}" method="post">
+                                                    <form action="{{route('products.destroy', $product->id)}}"
+                                                          method="post">
                                                         @csrf
                                                         @method('delete')
                                                         <p>Are you sure want to delete {{$product->product_name}} ?</p>
 
                                                         <div class="modal-footer">
-                                                            <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                            <button class="btn btn-default" data-dismiss="modal">
+                                                                Cancel
+                                                            </button>
                                                             <button class="btn btn-danger" type="submit">Delete</button>
                                                         </div>
 
@@ -190,7 +211,8 @@
     {{-- Modal of adding new Product --}}
 
     <!-- Modal -->
-    <div class="modal right fade" id="addproduct" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal right fade" id="addproduct" data-backdrop="static" data-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -209,10 +231,9 @@
 
                         <div class="form-group">
                             <label for="">Brand</label>
-                            <input type="text" name="brand" id="" class="form-control" >
+                            <input type="text" name="brand" id="" class="form-control">
 
                         </div>
-
 
 
                         <div class="form-group">
@@ -251,13 +272,14 @@
 
 
     <style>
-        .modal.right .modal-dialog{
+        .modal.right .modal-dialog {
             /*position: absolute;*/
             top: 0;
             right: 0;
-            margin-right:20vh;
+            margin-right: 20vh;
         }
-        .modal.fade:not(.in).right .modal-dialog{
+
+        .modal.fade:not(.in).right .modal-dialog {
             -webkit-transform: translate3d(25%, 0, 0);
             transform: translate3d(25%, 0, 0);
         }

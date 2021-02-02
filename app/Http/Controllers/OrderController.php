@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use App\Order;
 use App\Order_Detail;
 use App\Product;
@@ -88,6 +89,8 @@ class OrderController extends Controller
                 $transaction->transac_amount = $order_details->amount;
                 $transaction->transac_date = date('Y-m-d');
                 $transaction->save();
+
+                Cart::where('user_id', auth()->user()->id)->delete();
 
                 // Last Order History
 

@@ -20,14 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee10e94-af60-499a-9afb-8c227f2f4995" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel_pos_management_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_pos_management_system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/includes/sideBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/includes/sideBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/order.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/order.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/orders/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +200,10 @@
       <workItem from="1611938376703" duration="634000" />
       <workItem from="1612007380898" duration="12435000" />
       <workItem from="1612071648563" duration="3608000" />
-      <workItem from="1612186683893" duration="10424000" />
+      <workItem from="1612186683893" duration="11027000" />
+      <workItem from="1612249926378" duration="1307000" />
+      <workItem from="1612256038538" duration="626000" />
+      <workItem from="1612273907990" duration="11124000" />
     </task>
     <servers />
   </component>

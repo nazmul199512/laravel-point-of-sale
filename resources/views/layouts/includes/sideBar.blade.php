@@ -21,13 +21,14 @@
 </nav>
 
 <style>
-    #sidebar ul.lead{
+    #sidebar ul.lead {
         /*border-bottom: 1px solid #47748b;*/
         width: fit-content;
 
     }
+
     #sidebar ul li a {
-        padding:10px;
+        padding: 10px;
         font-size: 1.1em;
         display: block;
         width: 30vh;
@@ -36,15 +37,16 @@
 
     #sidebar ul li a:hover {
         color: #fff;
-        background:#008B8B;
+        background: #008B8B;
         text-decoration: none !important;
     }
 
 
-    #sidebar ul li a i{
-          margin-right:10px;
+    #sidebar ul li a i {
+        margin-right: 10px;
     }
-    #sidebar ul li.active>a, a[aria-expanded="true"]{
+
+    #sidebar ul li.active > a, a[aria-expanded="true"] {
         color: #fff;
         background: #008B8B;
     }
