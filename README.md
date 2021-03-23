@@ -1,4 +1,4 @@
-###  [Live](http://fast-falls-80428.herokuapp.com/)
+###  [Live](http://nazmul.rafalotech.com/laravel-point-of-sale/public/)
 
 ### SCreen Shot
 
