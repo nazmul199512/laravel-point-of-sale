@@ -1,4 +1,4 @@
-###  [Live](http://nazmul.rafalotech.com/laravel-point-of-sale/public/)
+###  [Live](http://nazmul.rafalotech.com/laravel-udemy-clone/public/)
 
 ### SCreen Shot
 
